@@ -183,3 +183,8 @@ _Credits to "Chris Helming":mailto:chris.helming@gmail.com_
   In: 598 kb/s
   Out: 13 kb/s
 </pre>
+
+h2. Disk Space
+
+show Available Disk Space 
+<pre>df -h /etc/rc.common | awk '{print "Free Space: " $4}' | grep "Gi"</pre>
